@@ -1,0 +1,183 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>DEVFORCE FREE PROXY | API</title>
+        <meta name="description" content=".">
+        <meta name="keywords" content=".">
+        <meta property="og:type" content="service">
+        <meta property="og:url" content="https://">
+        <meta property="og:description" content=".">
+        <meta property="og:image" content="https://">
+        <meta property="og:image:width" content="1200">
+        <meta property="og:image:height" content="630">
+        <meta name="apple-mobile-web-app-title" content="">
+        <meta name="application-name" content="">
+        <meta name="theme-color" content="#111827">
+        <meta name="msapplication-TileColor" content="#111827">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="theme-color" content="#000000">
+        <meta name="mobile-web-app-capable" content="yes">
+        <link rel="icon" href="icon-192x192.png">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon" href="icon-192x192.png">
+        <link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="ye
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+</head>
+
+<?php
+$arr0=file("https://raw.githubusercontent.com/Firmfox/Proxify/refs/heads/main/proxies/http.txt"); 
+$arr0=file("https://raw.githubusercontent.com/74647/Proxify/main/proxies/http.txt"); 
+
+$arr1=file("https://raw.githubusercontent.com/Firmfox/Proxify/refs/heads/main/proxies/https.txt"); 
+$arr1=file("https://raw.githubusercontent.com/74647/Proxify/main/proxies/https.txt");
+
+$arr2=file("https://raw.githubusercontent.com/Firmfox/Proxify/refs/heads/main/proxies/socks4txt"); 
+$arr2=file("https://raw.githubusercontent.com/74647/Proxify/main/proxies/socks4.txt");
+
+$arr3=file("https://raw.githubusercontent.com/Firmfox/Proxify/refs/heads/main/proxies/socks5txt"); 
+$arr3=file("https://raw.githubusercontent.com/74647/Proxify/main/proxies/socks5.txt");
+
+date_default_timezone_set('Europe/Kiev');
+?>
+
+<body>
+    <div class="container">
+        <div class="profile">
+    <img src="logo.png" alt="Logo" class="logo">
+
+        </div>
+
+    <div class="tab-container">
+        <div class="tab-buttons">           
+        <button class="tab-btn active">Statistics</button>
+    </div> 
+
+<div class="servers">
+<li class="proxy-item">
+<span class="proxy-type">Last updated</span>
+<b><p class="txtlog"><?php echo date("d.m.Y H:i:s");?></p></b>
+</li> 
+</div>
+
+<div class="servers">
+<li class="proxy-item">
+<span class="proxy-type">Status</span>
+<b><p class="txtlog">Online</p></b>
+</li>
+</div>
+
+<div class="servers">
+<li class="proxy-item">
+<span class="proxy-type">HTTP</span>
+<b><p class="txtlog"><?php echo count($arr0);?></p></b>
+</li>
+</div>
+
+<div class="servers">
+<li class="proxy-item">
+<span class="proxy-type">HTTPS</span>
+<b><p class="txtlog"><?php echo count($arr1);?></p></b>
+</li>
+</div>
+
+<div class="servers">
+<li class="proxy-item">
+<span class="proxy-type">SOCKS4</span>
+<b><p class="txtlog"><?php echo count($arr2);?></p></b>
+</li>
+</div>
+
+<div class="servers">
+<li class="proxy-item">
+<span class="proxy-type">SOCKS5</span>
+<b><p class="txtlog"><?php echo count($arr3);?></p></b>
+</li>
+</div>
+
+        <div class="tab-container">
+        <div class="tab-buttons">           
+        <button class="tab-btn active" data-tab="proxy">Proxies</button>
+    </div>
+
+<div class="servers">
+<li class="proxy-item">
+<span class="proxy-type">HTTP</span>
+<div class="proxy-actions">
+
+<button class="action-btn connect-btn">
+<a href="api/http.php">
+<img src="connect-icon.png" alt="url" class="action-icon"><p class="dftxt">Url</p></button>
+</a>
+
+<button class="action-btn download-btn">
+<a href="download/http.php">
+<img src="download-icon.png" class="action-icon"><p class="dftxt">Download</p></button>
+</a>
+</li></div>
+
+<div class="servers">
+<li class="proxy-item">
+<span class="proxy-type">HTTPS</span>
+<div class="proxy-actions">
+
+<button class="action-btn connect-btn">
+<a href="api/https.php">
+<img src="connect-icon.png" alt="url" class="action-icon"><p class="dftxt">Url</p></button>
+</a>
+
+<button class="action-btn download-btn">
+<a href="download/https.php">
+<img src="download-icon.png" class="action-icon"><p class="dftxt">Download</p></button>
+</a>
+</li></div>
+
+<div class="servers">
+<li class="proxy-item">
+<span class="proxy-type">SOCKS4</span>
+<div class="proxy-actions">
+
+<button class="action-btn connect-btn">
+<a href="api/socks4.php">
+<img src="connect-icon.png" alt="url" class="action-icon"><p class="dftxt">Url</p></button>
+</a>
+
+<button class="action-btn download-btn">
+<a href="download/socks4.php">
+<img src="download-icon.png" class="action-icon"><p class="dftxt">Download</p></button>
+</a>
+</li></div>
+
+<div class="servers">
+<li class="proxy-item">
+<span class="proxy-type">SOCKS5</span>
+<div class="proxy-actions">
+
+<button class="action-btn connect-btn">
+<a href="api/socks5.php">
+<img src="connect-icon.png" alt="url" class="action-icon"><p class="dftxt">Url</p></button>
+</a>
+
+<button class="action-btn download-btn">
+<a href="download/socks5.php">
+<img src="download-icon.png" class="action-icon"><p class="dftxt">Download</p></button>
+</a>
+</li></div>
+</div>
+
+        <div style="position:absolute;left:-9999px;top:-9999px;width:1px;height:1px;overflow:hidden;">
+        </div>
+
+        <footer>
+<p>© DevForce Software</p>
+      </footer>
+    </div>
+
+<script>
+
+</script>
+
+</body>
+</html>
