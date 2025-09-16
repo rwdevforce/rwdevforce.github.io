@@ -26,7 +26,8 @@
         <meta name="apple-mobile-web-app-capable" content="ye
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 </head>
-
+    
+<script>
 <?php
 $arr0=file("https://raw.githubusercontent.com/Firmfox/Proxify/refs/heads/main/proxies/http.txt"); 
 $arr0=file("https://raw.githubusercontent.com/74647/Proxify/main/proxies/http.txt"); 
@@ -42,6 +43,8 @@ $arr3=file("https://raw.githubusercontent.com/74647/Proxify/main/proxies/socks5.
 
 date_default_timezone_set('Europe/Kiev');
 ?>
+</script>
+
 
 <body>
     <div class="container">
@@ -174,10 +177,6 @@ date_default_timezone_set('Europe/Kiev');
 <p>© DevForce Software</p>
       </footer>
     </div>
-
-<script>
-
-</script>
 
 </body>
 </html>
