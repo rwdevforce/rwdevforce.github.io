@@ -4,7 +4,7 @@ var http;
         dataType: "http",
         async: true,
         success: function(msg){
-            test = msg;
+            http = msg;
             alert('HTTP: '+http);
         }
     });
@@ -15,7 +15,7 @@ var https:
         dataType: "https",
         async: true,
         success: function(msg){
-            test = msg;
+            https = msg;
             alert('HTTPS: '+https);
         }
     });
@@ -26,7 +26,7 @@ var socks4:
         dataType: "socks4",
         async: true,
         success: function(msg){
-            test = msg;
+            socks4 = msg;
             alert('SOCKS4: '+socks4);
         }
     });
@@ -37,7 +37,7 @@ var socks5;
         dataType: "socks5",
         async: true,
         success: function(msg){
-            test = msg;
+            socka5 = msg;
             alert('SOCKS5: '+socks5);
         }
     });
