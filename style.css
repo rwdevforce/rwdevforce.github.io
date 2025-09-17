@@ -260,13 +260,11 @@ h3 {
 }
 
 .connect-btn {
-    width: 50px;
     //background: rgba(79, 155, 255, 0.1);
     border:1px solid #00FF7F;
 }
 
 .download-btn {
-    width: 100px;
     //background: rgba(255, 156, 79, 0.1);
     border:1px solid #00FF7F;
     
